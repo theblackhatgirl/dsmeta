@@ -7,7 +7,6 @@ plugins {
 group = 'com.devsuperior'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
-mainClassName = 'com.devsuperior.dsmeta.DsmetaApplication'
 
 repositories {
 	mavenCentral()
@@ -28,4 +27,5 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
+task stage(dependsOn:['bootJar'])
 
